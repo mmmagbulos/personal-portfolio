@@ -1,0 +1,127 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7;
+	color: #333;
+}
+header {
+	background-color: #1E2A38;
+	color: white;
+	text-align: center;
+	padding: 20px 20px;
+	margin-bottom: 40px;
+	border-bottom: 5px solid #3498db;
+}
+header h1 {
+	font-size: 3em;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+header h2 {
+	font-size: 1.8em;
+	font-weight: 500;
+	margin-top: 10px;
+	font-family: 'Poppins', sans-serif;
+}
+header p {
+	font-size: 1.2em;
+	margin-top: 20px;
+	font-weight: 300;
+}
+section {
+	padding: 40px;
+	margin: 20px auto;
+	max-width: 1200px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	margin-bottom: 30px;
+}
+section h2 {
+	color: #1E2A38;
+	font-size: 2.5em;
+	margin-bottom: 30px;
+	font-family: 'Poppins', sans-serif;
+}
+.skills ul, .projects ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+.skills li, .projects li {
+	background-color: #ecf0f1;
+	margin: 15px 0;
+	padding: 18px;
+	border-radius: 6px;
+	transition: background-color 0.3s, transform 0.3s;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+.skills li:hover, .projects li:hover {
+	background-color: #3498db;
+	color: white;
+	transform: translateY(-5px);
+}
+.projects li h3 {
+	margin-top: 0;
+	font-size: 1.3em;
+	color: #34495e;
+}
+.contact a {
+	color: #3498db;
+	text-decoration: none;
+	font-weight: 600;
+}
+.contact a:hover {
+	text-decoration: underline;
+}
+footer {
+	background-color: #1E2A38;
+	color: white;
+	text-align: center;
+	padding: 25px;
+	margin-top: 40px;
+	font-size: 1.1em;
+}
+/* Button Styles */
+.button {
+	background-color: #3498db;
+	color: white;
+	padding: 12px 25px;
+	font-size: 1.2em;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	text-decoration: none;
+	display: inline-block;
+}
+.button:hover {
+	background-color: #2980b9;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 3px solid #4CAF50; /* Add a border at the top */
+    border-bottom: 3px solid #4CAF50; /* Add a border at the bottom */
+}
+.skills-list {
+    width: 45%;
+    padding: 20px;
+    border-left: 2px solid #4CAF50; /* Vertical border separating sections */
+    border-right: 2px solid #4CAF50; /* Vertical border separating sections */
+    margin: 0;
+}
+.skills-list:first-child {
+    border-left: none; /* Remove left border from the first section */
+}
+.skills-list h3 {
+    color: #4CAF50;
+}
+/* Optional: Add some spacing between the skills lists */
+.skills-list ul {
+    padding-left: 20px;
+}   
