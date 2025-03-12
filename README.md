@@ -1,2 +1,2 @@
 # personal-portfolio
-https://github.com/mmmagbulos/personal-portfolio.git
+https://mmmagbulos.github.io/personal-portfolio/
