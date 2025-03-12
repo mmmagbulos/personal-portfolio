@@ -1,232 +1,210 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7;
+	color: #333;
 }
+
 header {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 20px 20px;
-    margin-bottom: 40px;
-    border-bottom: 5px solid #ffffff;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 40px;
+	border-bottom: 5px solid #fff;
 }
+
+header h1, header h2 {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
 header h1 {
-    font-size: 3em;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+	font-size: 3em;
 }
+
 header h2 {
-    font-size: 1.8em;
-    font-weight: 500;
-    margin-top: 10px;
-    font-family: 'Poppins', sans-serif;
+	font-size: 1.8em;
+	font-weight: 500;
+	margin-top: 10px;
 }
+
 header p {
-    font-size: 1.2em;
-    margin-top: 20px;
-    font-weight: 300;
+	font-size: 1.2em;
+	margin-top: 20px;
+	font-weight: 300;
 }
-section {
-    padding: 10px;
-    margin: 20px auto;
-    max-width: 1000px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.profile-image {
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #D9007D;
+    margin-right: 20px; /* Adds space between image and text */
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+section, #SOCIALS {
+	padding: 10px;
+	margin: 20px auto 30px;
+	max-width: 1000px;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+section h2, #SOCIALS h2 {
+	color: #1E2A38;
+	font-size: 2.5em;
+	margin-bottom: 30px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.skills ul {
+    list-style: disc;
+    list-style-position: inside; 
+    padding: 0;
     text-align: center;
-    margin-bottom: 30px;
 }
-section h2 {
-    color: #1E2A38;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
-}
-.skills ul, .projects ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-.skills li, .projects li {
-    background-color: #ecf0f1;
-    margin: 15px 0;
-    padding: 18px;
+
+.skills li {
+    display: inline-block; 
+    width: 100%; 
+    text-align: center; 
+    background: #ecf0f1;
+    margin: 5px 0;
+    padding: 8px;
     border-radius: 6px;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: 0.3s;
     font-size: 1.1em;
     font-weight: 500;
 }
-.skills li:hover, .projects li:hover {
-    background-color: #3498db;
+
+.skills li:hover {
+    background: #3498db;
     color: white;
     transform: translateY(-5px);
 }
+
 .projects li h3 {
-    margin-top: 0;
-    font-size: 1.3em;
-    color: #34495e;
+	margin-top: 0;
+	font-size: 1.3em;
+	color: #34495e;
 }
+
 .contact a {
-    color: #3498db;
-    text-decoration: none;
-    font-weight: 600;
+	color: #3498db;
+	text-decoration: none;
+	font-weight: 600;
 }
+
 .contact a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
+
 footer {
-    background-color: #1E2A38;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
-    font-size: 1.1em;
-}
-.button {
-    background-color: #D9007D;
-    color: white;
-    padding: 12px 25px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-decoration: none;
-    display: inline-block;
-}
-.button:hover {
-    background-color: #000000;
+	background: #1E2A38;
+	color: white;
+	text-align: center;
+	padding: 25px;
+	margin-top: 40px;
+	font-size: 1.1em;
 }
 
-.skills-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    border-top: 3px solid #D9007D;
-    border-bottom: 3px solid #8A3AB9;
-}
-.skills-list {
-    width: 45%;
-    padding: 20px;
-    border-left: 2px solid #F58529;
-    border-right: 2px solid #515BD4;
-    margin: 0;
-}
-.skills-list:first-child {
-    border-left: none;
-}
-.skills-list h3 {
-    color: #000000;
-}
-.skills-list ul {
-    padding-left: 20px;
+.button, .social-buttons .button, .header-buttons a, #ABOUTME .button {
+	padding: 12px 25px;
+	font-size: 1.2em;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.3s;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	border: 2px solid #000;
 }
 
-@keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-}
-  
-.gradient-background {
-    background: linear-gradient(300deg, #F58529, #D9007D, #8A3AB9, #515BD4);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
+.button, .social-buttons .button {
+	background: #D9007D;
+	color: white;
+	border: none;
 }
 
-/* Styling for the Socials section */
-#SOCIALS {
-    margin: 20px auto;
-    max-width: 1000px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#SOCIALS h2 {
-    color: #1E2A38;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
-}
-
-#SOCIALS p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-/* Flexbox for the social buttons */
-.social-buttons {
-    display: flex;
-    justify-content: center;  /* Center the buttons horizontally */
-    gap: 20px; /* Space between buttons */
-    margin-top: 20px;
-}
-
-.social-buttons .button {
-    background-color: #D9007D;
-    color: white;
-    padding: 12px 25px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-decoration: none;
-    width: 200px;  /* Optional: Set a fixed width for the buttons */
-    text-align: center;
-}
-
-.social-buttons .button:hover {
-    background-color: #000000;
-}
-
-.header-buttons {
-    margin-top: 20px;
+.button:hover, .social-buttons .button:hover {
+	background: #000;
 }
 
 .header-buttons a {
-    background-color: transparent; /* Transparent background to match the section */
-    color: #000000;  /* Black text color for contrast */
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-right: 10px;
-    font-weight: 500;
-    border: 2px solid #000000; /* Black border around the buttons */
+	background: transparent;
+	color: #000;
+	margin-right: 10px;
+	font-weight: 500;
 }
 
-.header-buttons a:hover {
-    background-color: #0e01019a; /* Light gray background on hover */
-    color: #000000;  /* Ensure the text stays black on hover */
-    border-color: #000000; /* Keep the black outline on hover */
+.header-buttons a:hover, #ABOUTME .button:hover {
+	background: #000;
+	color: #fff;
 }
 
-#ABOUT ME .button {
-    background-color: transparent; /* Transparent background to match section */
-    color: #000000; /* Black text color for contrast */
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 1.2em;
-    font-weight: 500;
-    border: 2px solid #000000; /* Black border around the button */
-    display: inline-block; /* Ensure it behaves like a button */
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s;
+.skills-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	border-top: 3px solid #D9007D;
+	border-bottom: 3px solid #8A3AB9;
 }
 
-#ABOUT ME .button:hover {
-    background-color: #000000; /* Black background on hover */
-    color: #ffffff; /* White text color on hover */
-    border-color: #000000; /* Ensure the black border remains */
+.skills-list {
+	width: 45%;
+	padding: 20px;
+	border-left: 2px solid #F58529;
+	border-right: 2px solid #515BD4;
+	margin: 0;
+}
+
+.skills-list:first-child {
+	border-left: none;
+}
+
+.skills-list h3 {
+	color: #000;
+}
+
+.skills-list ul {
+	padding-left: 20px;
+}
+
+@keyframes gradient-animation {
+	0%, 100% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+}
+
+.gradient-background {
+	background: linear-gradient(300deg, #F58529, #D9007D, #8A3AB9, #515BD4);
+	background-size: 180% 180%;
+	animation: gradient-animation 18s ease infinite;
+}
+
+.social-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
