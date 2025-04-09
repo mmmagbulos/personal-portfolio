@@ -1,105 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Student Portfolio</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide.min.css">
+
+  <style>
+    .splide__arrow.splide__arrow--next,
+    .splide__arrow.splide__arrow--prev,
+    .splide__pagination {
+      display: none;
+    }
+
+    .splide *:focus {
+      outline: none;
+    }
+
+    .panel {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 1rem auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 90vw;
+    }
+  </style>
 </head>
 <body class="gradient-background">
-    <header>
-        <div class="header-content">
-            <img src="profile.jpg" alt="Profile Picture" class="profile-image">
-            <div class="header-text">
-                <h1>Ma. Mikael J. Agbulos</h1>
-                <h2>Student Portfolio</h2>
-                <div class="header-buttons">
-                    <a href="#about-me">ABOUT ME</a>
-                    <a href="#skills">SKILLS</a>
-                    <a href="#Education">EDUCATION</a>
-                    <a href="#Contact">SOCIALS</a>
-                </div>
-            </div>
-        </div>
-    </header>    
 
-<section id="about-me">
-	<h2><a href="https://facebook.com/mika.agbulos" class="button">About Me</a></h2>
-	<p>Hello! I am Ma. Mikael J. Agbulos, a second-year computer engineering student from the Technological Institute of the Philippines - Manila. I am eager to learn, grow, and work on several exciting projects that I will be able to explore. My goal is to develop my skills and apply them to all innovations that I will be working on in the future.</p>
-    <h3>Random Facts</h3>
-    <ul>
-        <li>I like pink</li>
-        <li>I love animals, specifically dogs, cats, capybara, seals, sea lions, sea otters</li>
-        <li>I like traveling</li>
-        <li>I love watching movies, series, or scrolling through social media to relieve stress</li>
-        <li>I like painting</li>
-    </ul>
-</section>
+<div class="nav-toggle">
+  <button id="navMenuBtn">☰</button>
+</div>
 
+<div id="navMenu" style="display: none;">
+  <a href="#ABOUTME">About Me</a>
+  <a href="#SKILLS">Skills</a>
+  <a href="#EDUCATION">Education</a>
+  <a href="#SOCIALS">Socials</a>
+</div>
+  <header>
+    <div class="header-content">
+      <img src="profile.jpg" alt="Profile Picture" class="profile-image">
+      <div class="header-text">
+        <h1>Ma. Mikael J. Agbulos</h1>
+        <h2>Student Portfolio</h2>
+      </div>
+    </div>
+  </header>
+  <div class="capybara-wrapper">
+    <img src="capybara.png" alt="Walking Capybara" class="capybara" />
+  </div>
 
-<section id="skills">
-	<h2>SKILLS</h2>
-	<div class="skills-container">
-    	<!-- Technical Skills -->
-    	<div class="skills-list">
-        	<h3>TECHNICAL SKILLS</h3>
-        	<ul>
-            	<li>Languages: C++, Python</li>
-            	<li>Web Development: HTML, CSS</li>
-            	<li>Embedded Systems: Arduino</li>
-            	<li>Database Management: MySQL</li>
-        	</ul>
-    	</div>
-   	 
-    	<!-- Soft Skills -->
-    	<div class="skills-list">
-        	<h3>SOFTS SKILLS</h3>
-        	<ul>
-            	<li>Project Management</li>
-            	<li>Time Management and Organization</li>
-            	<li>Communication and Teamwork</li>
-            	<li>Adaptability</li>
-                <li>Emotional Intelligence and Professionalism</li>
-        	</ul>
-    	</div>
+  <div id="portfolio-slider" class="splide" aria-label="Portfolio Sections">
+	<div class="splide__track">
+	  <ul class="splide__list">
+  
+		<li class="splide__slide panel">
+		  <section id="ABOUTME">
+			<h2><a href="https://facebook.com/mika.agbulos" class="button">About Me</a></h2>
+			<p>Hello! I am Ma. Mikael J. Agbulos, a second-year computer engineering student...</p>
+			<h3>Random Facts</h3>
+			<ul>
+			  <li>I like pink</li>
+			  <li>I love animals...</li>
+			  <li>I like traveling</li>
+			  <li>I love watching...</li>
+			  <li>I like painting</li>
+			</ul>
+		  </section>
+		</li>
+  
+		<li class="splide__slide panel">
+		  <section id="SKILLS">
+			<h2>SKILLS</h2>
+			<div class="skills-container">
+			  <div class="skills-list">
+				<h3>TECHNICAL SKILLS</h3>
+				<ul>
+				  <li>Languages: C++, Python</li>
+          <li>Web Development: HTML, CSS</li>
+          <li>Embedded Systems: Arduino</li>
+          <li>Database Management: MySQL</li>
+				</ul>
+			  </div>
+			  <div class="skills-list">
+				<h3>SOFT SKILLS</h3>
+				<ul>
+				  <li>Project Management</li>
+          <li>Time Management and Organization</li>
+          <li>Communication and Teamwork</li>
+          <li>Adaptability</li>
+          <li>Emotional Intelligence and Professionalism</li>
+				</ul>
+			  </div>
+			</div>
+		  </section>
+		</li>
+  
+		<li class="splide__slide panel">
+		  <section id="EDUCATION">
+			<h2>EDUCATION</h2>
+			<ul>
+			  <li><h3>Grade School</h3><p>Dominican College San Juan City</p></li>
+        <li><h3>Junior Highschool</h3><p>Dominican College San Juan City</p></li>
+        <li><h3>Senior Highschool</h3><p>Jose Rizal University</p></li>
+        <li><h3>College</h3><p>Technological Institute of the Philippines - Manila</p></li>
+			</ul>
+		  </section>
+		</li>
+  
+		<li class="splide__slide panel">
+		  <section id="SOCIALS">
+			<h2>SOCIALS</h2>
+			<p>If you’d like to get in touch...</p>
+			<div class="social-buttons">
+			  <a href="mailto:mmmagbulos@tip.edu.ph" class="button">GMAIL</a>
+			  <a href="https://m.me/mika.agbulos" class="button">MESSENGER</a>
+			  <a href="https://www.instagram.com/mikaelagbulos" class="button">INSTAGRAM</a>
+			</div>
+		  </section>
+		</li>
+	  </ul>
 	</div>
-</section>
+  </div>  
 
-<section id="Education">
-	<h2>EDUCATION</h2>
-	<ul class="Education">
-    	<li>
-        	<h3>Grade School</h3>
-        	<p>Dominican College San Juan City</p>
-    	</li>
-    	<li>
-        	<h3>Junior Highschool</h3>
-        	<p>Dominican College San Juan City</p>
-    	</li>
-        <li>
-        	<h3>Senior Highschool</h3>
-        	<p>Jose Rizal University</p>
-    	</li>
-    	<li>
-        	<h3>College</h3>
-        	<p>Technological Institute of the Philippines - Manila</p>
-    	</li>
-	</ul>
-</section>
+  <footer>
+    <p>&copy; 2025 Ma. Mikael J. Agbulos. All Rights Reserved.</p>
+  </footer>
 
-<section id="Contact">
-	<h2>SOCIALS</h2>
-	<p>If you’d like to get in touch, feel free to contact me through any of the following:</p>
-	<div class="social-buttons">
-    	<a href="mailto:mmmagbulos@tip.edu.ph" class="button">GMAIL</a>
-    	<a href="https://m.me/mika.agbulos" class="button">MESSENGER</a>
-    	<a href="https://www.instagram.com/mikaelagbulos" class="button">INSTAGRAM</a>
-	</div>
-</section>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-<footer>
-	<p>&copy; 2025 Ma. Mikael J. Agbulos. All Rights Reserved.</p>
-</footer>
+  <script>
+    // Initialize Splide
+    var elms = document.getElementsByClassName('splide');
+    for (var i = 0, len = elms.length; i < len; i++) {
+      new Splide(elms[i], {
+        perPage: 1,
+        perMove: 1,
+        type: 'loop',
+        focus: 'center',
+        gap: '1rem',
+        breakpoints: {
+          767: {
+            perPage: 1,
+          }
+        }
+      }).mount();
+    }
+
+    // Optional: AnimeJS Fade-In Animation for nav links
+    var fadeUp = anime.timeline({
+      loop: false,
+      autoplay: false,
+    });
+
+    fadeUp.add({
+      targets: '.nav-link',
+      translateY: [300, 0],
+      translateZ: 0,
+      opacity: [0, 1],
+      easing: "easeOutExpo",
+      duration: 1400,
+      delay: (el, i) => 0 + 150 * i
+    });
+
+    // Trigger animation
+    $(".trigger").click(function () {
+      setTimeout(() => {
+        fadeUp.restart();
+      }, 300);
+    });
+
+  const navMenuBtn = document.getElementById('navMenuBtn');
+  const navMenu = document.getElementById('navMenu');
+
+  navMenuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+  });
+  </script>
 </body>
 </html>
