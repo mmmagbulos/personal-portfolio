@@ -1,4 +1,3 @@
-// Declare variables globally to use for both dragScroll and menuSlider
 let isDown = false;
 let startX;
 let scrollLeft;
