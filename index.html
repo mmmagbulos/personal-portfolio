@@ -8,29 +8,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <style>
-    .splide__arrow.splide__arrow--next,
-    .splide__arrow.splide__arrow--prev,
-    .splide__pagination {
-      display: none;
-    }
-
-    .splide *:focus {
-      outline: none;
-    }
-
-    .panel {
-      background: #fff;
-      border-radius: 12px;
-      padding: 2rem;
-      margin: 1rem auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      max-width: 90vw;
-    }
-  </style>
 </head>
 <body class="gradient-background">
+  <nav class="nav">
+    <a href="#ABOUTME">About Me</a>
+    <a href="#SKILLS">Skills</a>
+    <a href="#EDUCATION">Education</a>
+    <a href="#SOCIALS">Socials</a>
+  </nav>
 
   <header>
     <div class="header-content">
@@ -46,87 +33,89 @@
   </div>
 
   <div id="portfolio-slider" class="splide" aria-label="Portfolio Sections">
-	<div class="splide__track">
-	  <ul class="splide__list">
-  
-		<li class="splide__slide panel">
-		  <section id="ABOUTME">
-			<h2><a href="https://facebook.com/mika.agbulos" class="button">About Me</a></h2>
-			<p>Hello! I am Ma. Mikael J. Agbulos, a second-year computer engineering student...</p>
-			<h3>Random Facts</h3>
-			<ul>
-			  <li>I like pink</li>
-			  <li>I love animals...</li>
-			  <li>I like traveling</li>
-			  <li>I love watching...</li>
-			  <li>I like painting</li>
-			</ul>
-		  </section>
-		</li>
-  
-		<li class="splide__slide panel">
-		  <section id="SKILLS">
-			<h2>SKILLS</h2>
-			<div class="skills-container">
-			  <div class="skills-list">
-				<h3>TECHNICAL SKILLS</h3>
-				<ul>
-				  <li>Languages: C++, Python</li>
-          <li>Web Development: HTML, CSS</li>
-          <li>Embedded Systems: Arduino</li>
-          <li>Database Management: MySQL</li>
-				</ul>
-			  </div>
-			  <div class="skills-list">
-				<h3>SOFT SKILLS</h3>
-				<ul>
-				  <li>Project Management</li>
-          <li>Time Management and Organization</li>
-          <li>Communication and Teamwork</li>
-          <li>Adaptability</li>
-          <li>Emotional Intelligence and Professionalism</li>
-				</ul>
-			  </div>
-			</div>
-		  </section>
-		</li>
-  
-		<li class="splide__slide panel">
-		  <section id="EDUCATION">
-			<h2>EDUCATION</h2>
-			<ul>
-			  <li><h3>Grade School</h3><p>Dominican College San Juan City</p></li>
-        <li><h3>Junior Highschool</h3><p>Dominican College San Juan City</p></li>
-        <li><h3>Senior Highschool</h3><p>Jose Rizal University</p></li>
-        <li><h3>College</h3><p>Technological Institute of the Philippines - Manila</p></li>
-			</ul>
-		  </section>
-		</li>
-  
-		<li class="splide__slide panel">
-		  <section id="SOCIALS">
-			<h2>SOCIALS</h2>
-			<p>If you would like to get in touch...</p>
-			<div class="social-buttons">
-			  <a href="mailto:mmmagbulos@tip.edu.ph" class="button">GMAIL</a>
-			  <a href="https://m.me/mika.agbulos" class="button">MESSENGER</a>
-			  <a href="https://www.instagram.com/mikaelagbulos" class="button">INSTAGRAM</a>
-			</div>
-		  </section>
-		</li>
-	  </ul>
-	</div>
-  </div>  
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide panel" data-aos="zoom-in">
+          <section id="ABOUTME" data-aos="zoom-in">
+            <h2><a href="https://facebook.com/mika.agbulos" class="button">About Me</a></h2>
+            <p>Hello! I am Ma. Mikael J. Agbulos, a second-year computer engineering student.</p>
+            <h3>Random Facts</h3>
+            <ul>
+              <li>I like pink</li>
+              <li>I love animals...</li>
+              <li>I like traveling</li>
+              <li>I love watching...</li>
+              <li>I like painting</li>
+            </ul>
+          </section>
+        </li>
+
+        <li class="splide__slide panel" data-aos="fade-up">
+          <section id="SKILLS" data-aos="fade-up">
+            <h2>SKILLS</h2>
+            <div class="skills-container">
+              <div class="skills-list">
+                <h3>TECHNICAL SKILLS</h3>
+                <ul>
+                  <li>Languages: C++, Python</li>
+                  <li>Web Development: HTML, CSS</li>
+                  <li>Embedded Systems: Arduino</li>
+                  <li>Database Management: MySQL</li>
+                </ul>
+              </div>
+              <div class="skills-list">
+                <h3>SOFT SKILLS</h3>
+                <ul>
+                  <li>Project Management</li>
+                  <li>Time Management and Organization</li>
+                  <li>Communication and Teamwork</li>
+                  <li>Adaptability</li>
+                  <li>Emotional Intelligence and Professionalism</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </li>
+
+        <li class="splide__slide panel" data-aos="fade-up">
+          <section id="EDUCATION" data-aos="fade-up">
+            <h2>EDUCATION</h2>
+            <ul>
+              <li><h3>Grade School</h3><p>Dominican College San Juan City</p></li>
+              <li><h3>Junior Highschool</h3><p>Dominican College San Juan City</p></li>
+              <li><h3>Senior Highschool</h3><p>Jose Rizal University</p></li>
+              <li><h3>College</h3><p>Technological Institute of the Philippines - Manila</p></li>
+            </ul>
+          </section>
+        </li>
+
+        <li class="splide__slide panel" data-aos="fade-up">
+          <section id="SOCIALS" data-aos="fade-up">
+            <h2>SOCIALS</h2>
+            <p>If you would like to get in touch...</p>
+            <div class="social-buttons">
+              <a href="mailto:mmmagbulos@tip.edu.ph" class="button">GMAIL</a>
+              <a href="https://m.me/mika.agbulos" class="button">MESSENGER</a>
+              <a href="https://www.instagram.com/mikaelagbulos" class="button">INSTAGRAM</a>
+            </div>
+          </section>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2025 Ma. Mikael J. Agbulos. All Rights Reserved.</p>
   </footer>
 
-  <!-- Scripts -->
+
+
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 
-  <script>
+ <script>
     // Initialize Splide
     var elms = document.getElementsByClassName('splide');
     for (var i = 0, len = elms.length; i < len; i++) {
@@ -166,13 +155,6 @@
         fadeUp.restart();
       }, 300);
     });
-
-  const navMenuBtn = document.getElementById('navMenuBtn');
-  const navMenu = document.getElementById('navMenu');
-
-  navMenuBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('hidden');
-  });
   </script>
 </body>
 </html>
