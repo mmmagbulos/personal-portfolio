@@ -65,3 +65,37 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }).mount();
 });
+
+    var elms = document.getElementsByClassName('splide');
+    for (var i = 0, len = elms.length; i < len; i++) {
+      new Splide(elms[i], {
+        perPage: 1,
+        perMove: 1,
+        type: 'loop',
+        focus: 'center',
+        gap: '1rem',
+        breakpoints: {
+          767: {
+            perPage: 1,
+          }
+        }
+      }).mount();
+    }
+
+    const navLinks = document.querySelectorAll('.nav a');
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll("section");
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 60) {
+          current = section.getAttribute("id");
+        }
+      });
+      navLinks.forEach(a => {
+        a.classList.remove("active");
+        if (a.getAttribute("href") === `#${current}`) {
+          a.classList.add("active");
+        }
+      });
+    });
