@@ -165,7 +165,7 @@
   
   /* Capybara animation */
   .capybara-wrapper {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 100px;
 	overflow: hidden;
@@ -193,3 +193,84 @@
 	margin-top: 40px;
 	font-size: 1.1em;
   }  
+
+  [data-aos] {
+	transition-property: transform, opacity;
+	transition-duration: 0.8s;
+	transition-timing-function: ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+	.header-content {
+	  flex-direction: column;
+	}
+  
+	.skills-container {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.skills-list {
+	  width: 90%;
+	}
+  
+	.profile-image {
+	  width: 150px;
+	  height: 150px;
+	}
+  }
+  
+  .splide__arrow.splide__arrow--next,
+  .splide__arrow.splide__arrow--prev,
+  .splide__pagination {
+	display: flex;
+  }
+
+  .splide *:focus {
+	outline: none;
+  }
+
+  .nav {
+	position: sticky;
+	top: 0;
+	background: rgba(255, 255, 255, 0.9);
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	padding: 10px 0;
+	z-index: 1000;
+	backdrop-filter: blur(10px);
+  }
+
+  .nav a {
+	text-decoration: none;
+	font-weight: 500;
+	color: #D9007D;
+	transition: color 0.3s ease;
+  }
+
+  .nav a:hover {
+	color: #515BD4;
+  }
+
+  .nav a.active {
+	border-bottom: 2px solid #D9007D;
+  }
+
+  @media (max-width: 600px) {
+	.header-content {
+	  flex-direction: column;
+	  text-align: center;
+	}
+	.profile-image {
+	  margin-bottom: 15px;
+	}
+	.skills-container {
+	  flex-direction: column;
+	  gap: 1.5rem;
+	}
+	.skills-list {
+	  width: 100%;
+	  border: none;
+	}
+  }
