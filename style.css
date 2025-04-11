@@ -21,8 +21,8 @@
 	background-color: #fff;
 	color: #000;
 	text-align: center;
-	padding: 20px;
-	margin-bottom: 300px;
+	padding: 5px;
+	margin-bottom: 1px;
 	border-bottom: 5px solid #fff;
   }
   
@@ -167,17 +167,7 @@
   .capybara-wrapper {
 	position: relative;
 	width: 100%;
-	height: 150px;
-	background:   @keyframes gradient-animation {
-		0%, 100% { background-position: 0% 50%; }
-		50% { background-position: 100% 50%; }
-	  }
-	  
-	  .gradient-background {
-		background: linear-gradient(300deg, #F58529, #D9007D, #8A3AB9, #515BD4);
-		background-size: 180% 180%;
-		animation: gradient-animation 18s ease infinite;
-	  };
+	height: 100px;
 	overflow: hidden;
   }
   
@@ -193,57 +183,7 @@
 	0% { left: 100%; }
 	100% { left: -120px; }
   }
-  
-  /* Navigation toggle */
-  .nav-toggle {
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	z-index: 1000;
-  }
-  
-  #navMenuBtn {
-	background: #D9007D;
-	color: white;
-	font-size: 28px;
-	border: none;
-	border-radius: 8px;
-	padding: 8px 12px;
-	cursor: pointer;
-	transition: background 0.3s ease;
-  }
-  
-  #navMenuBtn:hover {
-	background: #000;
-  }
-  
-#navMenu {
-    display: none; /* hidden initially */
-    flex-direction: column;
-    gap: 10px;
-    background: white;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    position: absolute;
-    top: 60px;
-    left: 20px;
-    z-index: 999;
-	transition: all 0.3s ease;
-}
-  
-  #navMenu a {
-	color: #000;
-	text-decoration: none;
-	font-weight: 600;
-	font-size: 1em;
-	transition: color 0.2s ease;
-  }
-  
-  #navMenu a:hover {
-	color: #D9007D;
-  }
-  
+
   /* Footer */
   footer {
 	background: #1E2A38;
