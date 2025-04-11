@@ -45,7 +45,6 @@ function addDragScrollEvents(element) {
   });
 }
 
-// Apply event listeners to dragScroll and menuSlider
 const dragScroll = document.querySelector('.drag-scroll');
 const menuSlider = document.querySelector('.menu-slider');
 
@@ -67,20 +66,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }).mount();
 });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const menuBtn = document.getElementById("navMenuBtn");
-    const menu = document.getElementById("navMenu");
-
-    menuBtn.addEventListener("click", () => {
-      menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-    });
-
-    // Close menu after clicking any link
-    const links = menu.querySelectorAll("a");
-    links.forEach(link => {
-      link.addEventListener("click", () => {
-        menu.style.display = "none";
-      });
-    });
-  });
